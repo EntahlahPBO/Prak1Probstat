@@ -1,13 +1,10 @@
-#2.	Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2
-
-#Peluang terdapat 4 pasien yang sembuh.
-#124,032
+#Nomor 2.A
 x <- 0:4
 size <- 20
 prob <- 0.2
 p <- dbinom(x,size,prob)
 
-#Gambarkan grafik histogram berdasarkan kasus tersebut.
+#Nomor 2.B
 
 x <- 0:20
 plot(x,dbinom(x,size,prob),
@@ -17,7 +14,7 @@ plot(x,dbinom(x,size,prob),
      xlab ='# Successes',
      lwd=3)
 
-#Nilai Rataan (??) dan Varian (??²) dari DistribusiBinomial.
+#Nomor 2.C
 
 
 data=cbind(x,p,x*p,x^2*p)
