@@ -1,15 +1,11 @@
-#Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis
-#4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
 
-#Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
-
+#Nomor 3.A
 x <- 6
 l <- 4.5
 
 dpois(x,l)
 
-#simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini selama
-#setahun (n = 365)
+#Nomor 3.B
 
 set.seed(0)
 n=365
@@ -19,11 +15,11 @@ hist(rpois(n,l),
      col="darkmagenta",
 )
 
-#dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
+#Nomor 3.C
+#Dari poin A kita hanya diperlihatkan tentang berapa peluang dari kelahiran bayi,sedangkan pada Poin B lebih lengkap karena kita bisa melihat lebih spesifik
+#Dengan melihat frekuensi per kemungkinan yang terjadi
 
-
-
-# Nilai Rataan (??) dan Varian (??²) dari Distribusi Poisson.
+#Nomor 3.D
 
 l=mu=sigma
 mu
