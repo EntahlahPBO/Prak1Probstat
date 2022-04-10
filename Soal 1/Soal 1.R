@@ -1,5 +1,4 @@
-#1.A Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi sebelum 
-#keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ?(distribusi Geometrik)
+#Nomor 1.A
 
 x <- 3
 p <- 0.20
@@ -7,17 +6,16 @@ p <- 0.20
 #peluang 
 dgeom(x-1,p)
 
-#1.B mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi
-#geometrik acak tersebut X = 3 ( distribusi geometrik acak () == 3 )
-
+#Nomor 1.B 
 
 mean(rgeom(n = 10000,p)==3)
 
-#1.C Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 
-#point a =0.128 dan b = 0.1051, 
+#Nomor 1.C
 
-#1.D Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
+#point a =0.128 dan b = 0.1051 dengan kesimpulan menggunakan distribusi acak akan bernilai lebih besar, 
+
+#Nomor 1.D
 
 set.seed(0)
 hist(rgeom(x,size,p),
@@ -27,7 +25,7 @@ hist(rgeom(x,size,p),
      col="darkmagenta",
 )
 
-#1.E Nilai rataan dan varian
+#Nomor 1.E
 
 mu=(1/p)
 mu
